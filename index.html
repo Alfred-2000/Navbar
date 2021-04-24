@@ -1,27 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NavBar</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
-<body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">Alfred</label>
-        <ul>
-            <li><a href="">Industrial Exposure</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Hobbies</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </nav>
-    <section></section>
-</body>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <!-- <title>Responsive Drop-down Menu Bar</title> -->
+      <link rel="stylesheet" href="style.css">
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <nav>
+         <div class="logo">
+            <img src="images/Logo.png" alt="logo">
+         </div>
+         <label for="btn" class="icon">
+         <span class="fa fa-bars"></span>
+         </label>
+         <input type="checkbox" id="btn">
+         <ul>
+            <li>
+               <label for="btn-1" class="show">About Us</label>
+               <a href="#">About Us</a>
+               <input type="checkbox" id="btn-1">
+               <ul>
+                  <li><a href="#">Bank's History</a></li>
+                  <li><a href="#">Chairmain's Message</a></li>
+                  <li><a href="#">Board Of Director</a></li>
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Financial Strength</a></li>
+                  <li><a href="#">Photo Gallery</a></li>
+                  <li><a href="#">Know Your Bank</a></li>
+               </ul>
+            </li>
+            <li>
+               <label for="btn-2" class="show">Services</label>
+               <a href="#">Services</a>
+               <input type="checkbox" id="btn-2">
+               <ul>
+                  <li><a href="#">Rupay Debit Card</a></li>
+                  <li><a href="#">Rupay Card Offers</a></li>
+                  <li><a href="#">Locker Facility</a></li>
+                  <li><a href="#">NEFT/RTGS</a></li>
+                  <li><a href="#">Stamp Franking</a></li>
+                  <li><a href="#">Unclaimed Account</a></li>
+                  <li><a href="#">SMS Banking</a></li>
+                  <li><a href="#">Mobile Banking</a></li>
+               </ul>
+            </li>
+            <li>
+               <label for="btn-3" class="show">Advances</label>
+               <a href="#">Advance</a>
+               <input type="checkbox" id="btn-3">
+               <ul>
+                  <li><a href="#">Home Loan</a></li>
+                  <li><a href="#">Vehicle Loan</a></li>
+                  <li><a href="#">Education Loan</a></li>
+                  <li><a href="#">Gold Loan</a></li>
+                  <li><a href="#">Personal Loan</a></li>
+                  <li><a href="#">Mortgage Loan</a></li>
+                  <li><a href="#">EMI Calculator</a></li>
+               </ul>
+            </li>
+            <li>
+               <label for="btn-4" class="show">Deposit</label>
+               <a href="#">Deposit</a>
+               <input type="checkbox" id="btn-4">
+               <ul>
+                  <li><a href="#">Saving Account</a></li>
+                  <li><a href="#">Current Account</a></li>
+                  <li><a href="#">Fixed Deposit</a></li>
+                  <li><a href="#">Recurring Deposit</a></li>
+                  <li><a href="#">Deposit Calculator</a></li>
+               </ul>
+            </li>
+            <li>
+               <label for="btn-5" class="show">Interest Rate</label>
+               <a href="#">Interest Rate</a>
+               <input type="checkbox" id="btn-5">
+               <ul>
+                  <li><a href="#">Loan Interestt Rate</a></li>
+                  <li><a href="#">Deposit Interest Rate</a></li>
+               </ul>
+            </li>
+            <li>
+               <label for="btn-6" class="show">Contact Us</label>
+               <a href="#">Contact Us</a>
+               <input type="checkbox" id="btn-6">
+               <ul>
+                  <li><a href="#">Branch Network</a></li>
+                  <li><a href="#">Feedback</a></li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+      <script>
+         $('.icon').click(function(){
+           $('span').toggleClass("cancel");
+         });
+      </script>
+   </body>
 </html>
