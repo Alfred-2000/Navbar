@@ -17,15 +17,20 @@ nav:after{
   clear: both;
   display: table;
 }
+nav .logo{
+  float: left;
+  padding-left: 60px;
+}
 nav .logo img{
   float: left;
   max-width: 100%;
   height: 150px;
-  padding-left: 60px;
+  padding-left: 40px;
 }
 nav ul{
   float: right;
-  margin-right: 40px;
+  margin-top: 35px;
+  margin-right: 5em;
   list-style: none;
   position: relative;
 }
@@ -53,6 +58,7 @@ nav ul ul li a:hover{
 }
 nav ul ul{
   position: absolute;
+  margin-top: 0px;
   top: 90px;
   border-top: 3px solid cyan;
   opacity: 0;
@@ -70,10 +76,11 @@ nav ul li:hover > ul{
 nav ul ul li{
   position: relative;
   margin: 0px;
-  width: 250px;
+  width: 185px;
+  text-align: center;
   float: none;
   display: list-item;
-  border-bottom: 1px solid rgba(0,0,0,0.3);
+  /* border-bottom: 1px solid rgba(59, 5, 5, 0.3); */
 }
 nav ul ul li a{
   line-height: 50px;
@@ -81,17 +88,15 @@ nav ul ul li a{
 nav ul ul ul li{
   position: relative;
   top: -60px;
-  left: 150px;
+  width: 220px;
+  left: 185px;
 }
 .show,.icon,input{
   display: none;
 }
-.fa-plus{
-  font-size: 15px;
-  margin-left: 40px;
-}
 @media all and (max-width: 968px) {
   nav ul{
+    margin-top: 10px;
     margin-right: 0px;
     float: left;
   }
@@ -103,6 +108,8 @@ nav ul ul ul li{
     display: none;
   }
   nav ul li,nav ul ul li{
+    /* text-align: center; */
+    text-align: right;
     display: block;
     width: 100%;
   }
@@ -113,9 +120,20 @@ nav ul ul ul li{
     display: block;
     color: white;
     font-size: 18px;
-    padding: 0 20px;
-    line-height: 70px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 45px;
     cursor: pointer;
+  }
+    nav ul ul li 
+  {
+    /* border: 1px solid white; */
+    /* background: rgb(47, 47, 48); */
+    width: 80%;
+    margin: 0 auto;
+    /* text-align: center; */
+    text-align: right;
   }
   .show:hover{
     color: cyan;
@@ -124,7 +142,8 @@ nav ul ul ul li{
     display: block;
     color: white;
     position: absolute;
-    top: 0;
+    top: 35px;
+    margin-right: 20px;
     right: 40px;
     line-height: 70px;
     cursor: pointer;
@@ -143,19 +162,21 @@ nav ul ul ul li{
     padding-left: 40px;
   }
   nav ul ul ul a{
-    padding-left: 80px;
+    padding: 0;
   }
   nav ul ul ul li{
+    /* border: 1px solid white; */
+    /* background: rgb(47, 47, 48); */
+    padding: 0 30px;
     position: static;
+    width: 70%;
+    margin: 0 auto;
   }
   [id^=btn]:checked + ul{
     display: block;
   }
   nav ul ul li{
     border-bottom: 0px;
-  }
-  span.cancel:before{
-    content: '\f00d';
   }
 }
 .content{
