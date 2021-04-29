@@ -389,3 +389,10 @@ header
         transition: .7s;
     }
 }
+@media (max-width: 420px)
+{
+    .nav-btn
+    {
+        width: 65%;
+    }
+}
