@@ -1,70 +1,98 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="style.css">
-      <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
-      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-   <body>
-      <nav>
-         <div class="logo">
-            <img src="images/Logo.png" alt="logo">
-         </div>
-         <label for="btn" class="icon">
-         <span class="fa fa-bars"></span>
-         </label>
-         <input type="checkbox" id="btn">
-         <ul>
-            <li><a href="#">About Us</a></li>
-            <li>
-               <label for="btn-2" class="show">Products</label>
-               <a href="#">Products</a>
-               <input type="checkbox" id="btn-2">
-               <ul>
-                  <li>
-                     <label for="btn-3" class="show">Savings Account</label>
-                     <a href="#">Savings Account</a>
-                     <input type="checkbox" id="btn-3">
-                     <ul>
-                        <li><a href="#">Zero Balance</a></li>
-                        <li><a href="#">Regular</a></li>
-                        <li><a href="#">Premium</a></li>
-                     </ul>
-                  </li>
-                  <li>
-                     <label for="btn-4" class="show">Deposit</label>
-                     <a href="#">Deposit</a>
-                     <input type="checkbox" id="btn-4">
-                     <ul>
-                        <li><a href="#">Fixed Deposit</a></li>
-                        <li><a href="#">Recurring Deposit</a></li>
-                        <li><a href="#">Daily Deposit</a></li>
-                     </ul>
-                  </li>
-                  <li>
-                     <label for="btn-5" class="show">Loan</label>
-                     <a href="#">Loan</a>
-                     <input type="checkbox" id="btn-5">
-                     <ul>
-                        <li><a href="#">Gold Loan</a></li>
-                        <li><a href="#">Mortgage Loan</a></li>
-                        <li><a href="#">Loan Against Deposit</a></li>
-                     </ul>
-                  </li>
-               </ul>
-            </li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Contact Us</a></li>
-         </ul>
-      </nav>
-      
-      <!-- <script>
-         $('.icon').click(function(){
-           $('span').toggleClass("cancel");
-         });
-      </script> -->
-   </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Navbar</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <input type="checkbox" name="" id="check">
+            <div class="logo-container">
+                <a href="#"><img src="images/Logo.png" alt="logo"></a>
+            </div>
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s"><a href="#">About Us</a></li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">Products<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">Savings Account<i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                            <ul>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Zero Balance</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Regular</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Premium</a>
+                                                </li>
+                                                <div class="arrow"></div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Deposit<i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                            <ul>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Fixed Deposit</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Recurring Deposit</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Daily Deposit</a>
+                                                </li>
+                                                <div class="arrow"></div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Loan<i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                            <ul>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Gold Loan</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Mortgage Loan</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Loan Against Deposit</a>
+                                                </li>
+                                                <div class="arrow"></div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s"><a href="#">Terms & Conditions</a></li>
+                        <li class="nav-link" style="--i: 1.35s"><a href="#">Privacy Policy</a></li>
+                        <li class="nav-link" style="--i: 1.35s"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
 </html>
