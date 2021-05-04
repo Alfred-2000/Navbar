@@ -413,7 +413,7 @@ header {
     background-color: rgba(0, 0, 0, 0.596);
     height: 100%;
 }
-.overlay-contact h2
+.contact-address h2
 {
     padding: 0.5em;
     background-color: none;
@@ -423,9 +423,9 @@ header {
 }
 .overlay-contact p
 {
-    font-size: .8rem;
+    font-size: 1rem;
     text-align: center; 
-    padding: 0 1rem;
+    padding: 1rem 1rem 0 1rem;
     letter-spacing: 1px;
 }
 .container-contact1
@@ -501,11 +501,29 @@ textarea::placeholder
 .contact-address
 {
     background: rgb(149, 150, 161);
+    /* display: flex; */
+}
+.links
+{
+    /* background: rgb(109, 107, 107); */
+    text-align: center;
+    /* letter-spacing: 1px; */
+    padding-top:1rem;
+}
+.links ul
+{
+    padding: 1rem 0;
     display: flex;
+    justify-content: center;
+}
+.links ul a
+{
+    color: rgb(36, 29, 29);
+    margin: 1rem;
 }
 .contact-icon1
 {
-    margin-top: 1rem;
+    margin: 7px 0;
     display: flex;
     /* text-align: center; */
     justify-content: center;
@@ -573,12 +591,17 @@ textarea::placeholder
     {
         background: url(images/contact.jpg) no-repeat center;
         background-size: cover;
-    }          
+    }       
+    .links ul a:hover
+    {
+        transition: .5s;
+        color: rgb(252, 250, 252);
+    }
     .container-contact1
     {
         flex-direction: row;
     }
-    .overlay-contact h2
+    .contact-address h2
     {
         padding: 0.5em;
         font-size: 2em;
@@ -586,9 +609,9 @@ textarea::placeholder
     }
     .overlay-contact p
     {
-        padding: 0.5em;
-        letter-spacing: 1.5px;
-        font-size: 1em;
+        padding: 1.5rem 0;
+        letter-spacing: 1.3px;
+        font-size: 1.3em;
     }
     input
     {
