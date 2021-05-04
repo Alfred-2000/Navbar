@@ -279,9 +279,10 @@ header {
         font-size: 1rem;
         position: absolute;
         right: 20%;
-        top: 3.2rem;
+        top: 3.5rem;
         width: 100px;
         padding: .1rem;
+        line-height: 1.3rem;
     }
     .nav-btn {
         position: fixed;
@@ -398,4 +399,133 @@ header {
     }
 }
 
+/************************************************Footer***********************************************/
 
+.contact-section
+{
+    background: url(images/contact2.jpg) no-repeat center;
+    color: cornsilk !important;
+    background-size: cover;
+    height: 100%;
+}
+.overlay-contact
+{
+    background-color: rgba(0, 0, 0, 0.596);
+    height: 100%;
+}
+.overlay-contact h2
+{
+    padding: 0.5em;
+    background-color: none;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+.overlay-contact p
+{
+    font-size: .8rem;
+    text-align: center; 
+    padding: 0 1rem;
+    letter-spacing: 1px;
+}
+.container-contact
+{
+    width: min(85%, 989px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form
+{
+    text-align: center;
+    margin-top: 1.25em;
+}
+.contact-form
+{
+    /* width: 80%; */
+    margin: 0 auto;
+}
+input
+{
+    padding: 10px;
+    margin-bottom: 1.25em;
+    width: 80%;
+    background-color:rgba(136, 133, 133, 0.5);
+    color: white;
+    border: none;
+    outline:none;
+    border-radius: 5px;
+}
+input::placeholder
+{
+    color: white;
+}
+textarea
+{
+    padding: 10px;
+    margin-bottom: 1em;  
+    width: 80%;
+    background-color:rgba(136, 133, 133, 0.5);
+    color: white;
+    border: none;
+    outline:none;
+    border-radius: 5px;
+}
+textarea::placeholder
+{
+    color: white;
+}  
+.submit
+{
+    width: 50%;
+    background: none;
+    padding: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 33px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border:2px solid rgb(190, 190, 190);
+    color: rgb(190, 190, 190);
+}
+.submit:hover
+{
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+@media(min-width: 769px){  
+    .contact-section
+    {
+        background: url(images/contact.jpg) no-repeat center;
+        background-size: cover;
+    }          
+    .container-contact
+    {
+        flex-direction: row;
+    }
+    .overlay-contact h2
+    {
+        padding: 0.5em;
+        font-size: 2em;
+        letter-spacing: 2px;
+    }
+    .overlay-contact p
+    {
+        padding: 0.5em;
+        letter-spacing: 1.5px;
+        font-size: 1em;
+    }
+    input
+    {
+        width: 100%;
+    }
+    textarea
+    {
+        width: 100%;
+    }
+}
