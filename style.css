@@ -408,12 +408,17 @@ header {
     background-size: cover;
     height: 100%;
 }
-.overlay-contact
+.contact-overlay
 {
     background-color: rgba(0, 0, 0, 0.596);
     height: 100%;
 }
-.contact-address h2
+.contact-container
+{
+    width: min(991px, 85%);
+    margin: 0 auto;
+}
+.contact-container h2
 {
     padding: 0.5em;
     background-color: none;
@@ -421,14 +426,85 @@ header {
     font-size: 1.5em;
     letter-spacing: 2px;
 }
-.overlay-contact p
+.contact-links
+{
+    /* background: rgb(109, 107, 107); */
+    text-align: center;
+    /* letter-spacing: 1px; */
+    padding-top:1rem;
+}
+.contact-links ul
+{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+.contact-links ul a
+{
+    color: rgb(36, 29, 29);
+    margin: 1rem;
+}
+.contact-address
+{
+    padding-top: 0;
+}
+.contact-address-top
+{
+    margin: 7px 0;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+}
+.contact-address-top img:hover
+{
+    transform: translateX(20%);
+    transition: 1s;
+}
+.contact-icon1 img
+{
+    height: 1.9em;
+    margin-right: 1rem;
+}
+.contact-icon21
+{
+    display: flex;
+    flex-direction: column;
+}
+.contact-icon2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5em;
+    letter-spacing: 1px;
+}
+.contact-icon2 img
+{
+    /* max-width: 100%; */
+    height: 1.7em;
+    margin-right: .5rem;
+}
+.contact-icon2 a
+{
+    display: flex;
+    font-size: .9rem;
+    /* justify-content: center; */
+    color: black;    
+}
+.contact-items
+{
+    padding-top: 1rem;
+}
+.contact-items p
 {
     font-size: 1rem;
     text-align: center; 
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem;
     letter-spacing: 1px;
 }
-.container-contact1
+.contact-container1
 {
     width: min(85%, 989px);
     margin: 0 auto;
@@ -436,16 +512,17 @@ header {
     flex-direction: column;
     align-items: center;
 }
-form
-{
-    text-align: center;
-    margin-top: 1.25em;
-}
 .contact-form
 {
     /* width: 80%; */
     margin: 0 auto;
 }
+form
+{
+    text-align: center;
+    margin-top: 1.25em;
+}
+
 input
 {
     padding: 10px;
@@ -498,88 +575,6 @@ textarea::placeholder
     color: #fff;
     cursor: pointer;
 }
-.contact-address
-{
-    background: rgb(149, 150, 161);
-    /* display: flex; */
-}
-.links
-{
-    /* background: rgb(109, 107, 107); */
-    text-align: center;
-    /* letter-spacing: 1px; */
-    padding-top:1rem;
-}
-.links ul
-{
-    padding: 1rem 0;
-    display: flex;
-    justify-content: center;
-}
-.links ul a
-{
-    color: rgb(36, 29, 29);
-    margin: 1rem;
-}
-.contact-icon1
-{
-    margin: 7px 0;
-    display: flex;
-    /* text-align: center; */
-    justify-content: center;
-}
-.contact-icon2
-{
-    /* width: min(991px, 80%); */
-    margin: 0 auto;
-    /* background: cornflowerblue; */
-}
-.container-contact2
-{
-    width: min(991px, 80%);
-    margin: 0 auto;
-    text-align: center;
-    /* background: cornflowerblue; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-}
-.contact-icons1
-{
-    /* background: rgb(206, 250, 162); */
-}
-.contact-icons2
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0.5em;
-    letter-spacing: 1px;
-}
-.contact-icons1 img
-{
-    height: 1.9em;
-    margin-right: 1rem;
-}
-.contact-icon1 img:hover
-{
-    transform: translateX(20%);
-    transition: 1s;
-}
-.contact-icons2 img
-{
-    /* max-width: 100%; */
-    height: 1.7em;
-    margin-right: .5rem;
-}
-.contact-icons2 a
-{
-    display: flex;
-    font-size: .9rem;
-    /* justify-content: center; */
-    color: black;    
-}
 .copyright
 {
     background: black;
@@ -591,27 +586,50 @@ textarea::placeholder
     {
         background: url(images/contact.jpg) no-repeat center;
         background-size: cover;
-    }       
-    .links ul a:hover
+    } 
+    .contact-container
+    {
+        display: flex;
+        /* flex-direction: row; */
+    }
+    .contact-links ul
+    {
+        /* background: chocolate; */
+        width: 200px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-links ul li 
+    {
+        padding-top: 1rem;
+    }      
+    .contact-links ul a:hover
     {
         transition: .5s;
         color: rgb(252, 250, 252);
-    }
-    .container-contact1
-    {
-        flex-direction: row;
-    }
-    .contact-address h2
+    } 
+    .contact-links h2
     {
         padding: 0.5em;
-        font-size: 2em;
+        /* font-size: 2em; */
         letter-spacing: 2px;
     }
-    .overlay-contact p
+    .contact-address
     {
-        padding: 1.5rem 0;
-        letter-spacing: 1.3px;
-        font-size: 1.3em;
+        /* background: coral; */
+        padding-top:1rem;
+    }
+    .contact-items p
+    {
+        padding: 12px;
+        letter-spacing: 1px;
+        font-size: 1.1em;
+    }
+    .contact-container1
+    {
+        width: 100%;
+        margin: 0;
     }
     input
     {
@@ -621,35 +639,43 @@ textarea::placeholder
     {
         width: 100%;
     }
-    .container-contact2
+    .contact-address-top
     {
         display: flex;
-    }
-    .contact-icon1
-    {
-        display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         /* justify-content: center; */
+        align-items: center;
     }
-    .contact-icons1 img
+    .contact-icon1 img
     {
         height: 2.1rem;
         margin-bottom: .8rem;
     }
-    .contact-icon1 img:hover
+    .contact-address-top img:hover
     {
         transform: translateX(25%);
     }
-    .contact-icon2 a:hover
+    .contact-address-bottom a:hover
     {
         transform: translateX(1.5%);
         transition: 1s;
+    }
+    .contact-icon21
+    {
+        /* display: flex; */
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .contact-icon2
+    {
+        display: flex;
+        justify-content: space-evenly;
     }
     .contact-icons2 a
     {
         font-size: 1.15rem;
     }
-    .contact-icon2 a
+    .contact-bottom a
     {
         border-radius: 10px;
         padding-left: 10px;
