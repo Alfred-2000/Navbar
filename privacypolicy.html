@@ -26,31 +26,26 @@
             align-items: center;
             justify-content: center;
         }
-
         .privacy-overlay h2 {
             /* background: rgba(141, 136, 132, 0.5); */
             /* justify-content: center; */
             /* align-items: center; */
             /* text-align: center; */
-            color: rgb(213, 213, 238);
-            font-size: 2rem;
-            padding: 2rem 5rem;
+            color: whitesmoke;
+            font-size: 2.3rem;
+            /* padding: 2rem 5rem; */
         }
-
         .privacy-container {
             width: min(991px, 80%);
             margin: 0 auto;
         }
-
         .privacy-content {
             background: rgba(97, 92, 145, 0.247);
         }
-
         .privacy-container {
             width: min(991px, 80%);
             margin: 0 auto;
         }
-
         .privacy-container ul {
             /* background: khaki; */
             padding: 1rem 0 2rem 0;
@@ -118,13 +113,22 @@
                 flex-direction: row;
                 align-items: center;
                 /* justify-content: space-between; */
-                width: 80%;
+                width: 85%;
                 margin: 0 auto;
             }
             .policy img{                
                 height: 10em;
                 padding: 1rem;
                 margin-right: 4rem;
+            }
+            .privacy-container ul li:hover img
+            {
+                transition: 1s ease-in-out;
+                transform: translateX(-30%);
+                border-top-right-radius: 0%;
+                border-bottom-left-radius: 0%;
+                border-top-left-radius: 30%;
+                border-bottom-right-radius: 30%;
             }
         }
     </style>
