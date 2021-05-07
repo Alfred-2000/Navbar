@@ -30,14 +30,22 @@
         }
         .tandc-overlay h2
         {
-            /* background: rgba(148, 121, 102, 0.5); */
-            /* justify-content: center; */
-            /* align-items: center; */
-            /* text-align: center; */
             color: whitesmoke;
             font-size: 2rem;
-            /* padding: 1.5rem; */
-            /* padding: 2rem 2rem; */
+            animation: moveright 1s linear 1;
+            animation-delay: .5s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+        }
+        @keyframes moveright{
+            0%{
+                transform: translateX(-10%);
+                visibility: visible;
+            }
+            100%{
+                transform: translateX(0);
+                visibility: visible;
+            }
         }
         .tandc-content
         {
@@ -157,7 +165,7 @@
             </div>
             <div class="login">
                 <a href="http://banking.redalnidhi.in/login">
-                    <h2>Customer Log In</h2>
+                    <h2>Customer Login</h2>
                 </a>
             </div>
         </div>
@@ -214,6 +222,12 @@
             </div>
         </div>
     </section>
+
+    
+    <!---------------------------------------------Empty Space--------------------------------------------------->
+
+    <div style="background: whitesmoke; margin: 3.5rem;">
+    </div>
 
     <!--------------------------------------------Contact Form------------------------------------------------->
 

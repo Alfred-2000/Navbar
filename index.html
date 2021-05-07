@@ -7,12 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
   <title>Redal Nidhi Project</title>
 </head>
 
 <body>
 
-  <!-----------------------------------------------Navbar-------------------------------------------------->
+  <!-------------------------------------------------Navbar-------------------------------------------------->
+  
   <header>
     <div class="container">
       <input type="checkbox" name="" id="check">
@@ -27,7 +29,7 @@
       <div class="nav-btn">
         <div class="nav-links">
           <ul>
-            <li class="nav-link" style="--i: .6s"><a href="aboutUs.html">About Us</a></li>
+            <li class="nav-link" style="--i: .6s"><a href="#aboutUs">About Us</a></li>
             <li class="nav-link" style="--i: .85s"><a href="#">Products<i class="fas fa-caret-down"></i></a>
               <div class="dropdown">
                 <ul>
@@ -73,13 +75,200 @@
       </div>
       <div class="login">
         <a href="http://banking.redalnidhi.in/login">
-          <h2>Customer Log In</h2>
+          <h2>Customer Login</h2>
         </a>
       </div>
     </div>
   </header>
 
-  <!--------------------------------------------Contact Form------------------------------------------------->
+  <!-----------------------------------------------Carousel-------------------------------------------------->
+
+  <section id="carousel">
+    <div class="mySlides fade">
+      <img src="images/savings.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/deposit.jpg" style="width:100%">
+      <div class="text">
+        <h1>Redal Nidhi Savings Account</h1>
+        <h2 style="font-weight:normal"> Start your savings with a Zero Balance account <br> and get upto 3% interest
+        </h2>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <img class="account" src="images/account.jpg" style="width:100%">
+      <div class="data">
+        <h1> Fixed Deposit </h1>
+        <h2 style="font-weight:normal"> Isn't it amazing to get 10.5 % rate of interest by making a minimum deposit of
+          Rs 10,000? </h2>
+      </div>
+    </div>
+  </section>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+  <!-----------------------------------------------Empty Space--------------------------------------------------->
+
+
+  <div style="background: whitesmoke; margin: 3.5rem;">
+  </div>
+
+
+  <!-----------------------------------------------About Us-------------------------------------------------->
+  
+  
+  <section id="aboutUs">
+    <div class="aboutus-container">
+        <div class="aboutus-content">
+            <div class="dflex">
+                <div class="d-image">
+                    <img src="images/zero balance.jpg" alt="zero balance">
+                </div>
+                <div class="d-text">
+                    <h2>Zero Balance</h2>
+                    <p>Interest rate 3%, Initial amount Rs.0</p>
+                </div>
+            </div>
+            <div class="dflex">
+                <div class="d-image">
+                    <img src="images/regular.jpg" alt="regular">
+                </div>
+                <div class="d-text">
+                    <h2>Regular</h2>
+                    <p>Interest rate 4%, Initial amount- Rs.2000</p>
+                </div>
+            </div>
+            <div class="dflex">
+                <div class="d-image">
+                    <img src="images/premium.jpg" alt="premium">
+                </div>
+                <div class="d-text">
+                    <h2>Premium</h2>
+                    <p>Interest rate 5%, Initial amount- Rs.10000</p>
+                </div>
+            </div>
+            <div class="dflex">
+                <div class="d-image">
+                    <img src="images/zero balance.jpg" alt="zero balance">
+                </div>
+                <div class="d-text">
+                    <h2>Zero Balance</h2>
+                    <p>Interest rate 3%, Initial amount Rs.0</p>
+                </div>
+            </div>
+            <div class="dflex">
+                <div class="d-image">
+                    <img src="images/regular.jpg" alt="regular">
+                </div>
+                <div class="d-text">
+                    <h2>Regular</h2>
+                    <p>Interest rate 4%, Initial amount- Rs.2000</p>
+                </div>
+            </div>
+            <div class="dflex">
+                <div class="d-image">
+                    <img src="images/premium.jpg" alt="premium">
+                </div>
+                <div class="d-text">
+                    <h2>Premium</h2>
+                    <p>Interest rate 5%, Initial amount- Rs.10000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+  <!-----------------------------------------------Empty Space--------------------------------------------------->
+
+
+  <div style="background: whitesmoke; margin: 3.5rem;">
+  </div>
+
+
+  <!---------------------------------------------------Testimonials---------------------------------------------->
+
+
+  <section id="testimonials">
+    <div class="testimonials-title">
+      <div class="testimonials-overlay">
+      <h2>Testimonials</h2>
+      </div>
+    </div>
+    <div class="testimonial-container">
+      <div class="testimonial-content">
+        <img src="images/customer1.jpg" alt="customer1">
+        <div class="testimonial-texts">
+          <h3>Best Chemical Products & Services</h3>
+          <p>
+            "I have used several chemical products from various chemical companies but finally, I was happy & satisfied
+            with the service. I would like to recommend others to buy chemical products."
+          </p>
+        </div>
+      </div>
+      <div class="testimonial-content">
+        <img src="images/customer2.jpg" alt="customer2">
+        <div class="testimonial-texts">
+          <h3>Awesome Customer Service</h3>
+          <p>
+            "The customer support group is constantly anxious to help. We have full trust in their products and
+            services. They have dependably provided synthetic compounds on time and have great quality products."The
+            customer support group is constantly anxious to help. We have full trust in their products and services.
+            They have dependably provided synthetic compounds on time and have great quality products."
+          </p>
+        </div>
+      </div>
+      <div class="testimonial-content">
+        <img src="images/customer6.jpeg" alt="customer3">
+        <div class="testimonial-texts">
+          <h3>Best Chemical Products & Services</h3>
+          <p>
+            "I have used several chemical products from various chemical companies but finally, I was happy & satisfied
+            with the service. I would like to recommend others to buy chemical products."
+          </p>
+        </div>
+      </div>
+      <div class="testimonial-content">
+        <img src="images/customer7.jpg" alt="customer4">
+        <div class="testimonial-texts">
+          <h3>Awesome Customer Service</h3>
+          <p>
+            "The customer support group is constantly anxious to help. We have full trust in their products and
+            services. They have dependably provided synthetic compounds on time and have great quality products."The
+            customer support group is constantly anxious to help. We have full trust in their products and services.
+            They have dependably provided synthetic compounds on time and have great quality products."
+          </p>
+        </div>
+      </div>
+      <div class="testimonial-content">
+        <img src="images/customer8.jpg" alt="customer5">
+        <div class="testimonial-texts">
+          <h3>Awesome Customer Service</h3>
+          <p>
+            "The customer support group is constantly anxious to help. We have full trust in their products and
+            services. They have dependably provided synthetic compounds on time and have great quality products."The
+            customer support group is constantly anxious to help. We have full trust in their products and services.
+            They have dependably provided synthetic compounds on time and have great quality products."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-----------------------------------------------Empty Space--------------------------------------------------->
+
+
+  <div style="background: whitesmoke; margin: 3.5rem;">
+  </div>
+
+
+  <!----------------------------------------------Contact Form------------------------------------------------->
+
 
   <footer id="contact">
     <div class="contact-section">
@@ -101,7 +290,8 @@
                 </a>
               </div>
               <div class="contact-icon1">
-                <a href="https://play.google.com/store/apps/details?id=com.redalmutualnidhi.redal" title="Click to download">
+                <a href="https://play.google.com/store/apps/details?id=com.redalmutualnidhi.redal"
+                  title="Click to download">
                   <img src="images/playstore.png" alt="play store">
                 </a>
               </div>
@@ -109,7 +299,7 @@
             <div class="contact-address-bottom">
               <div class="contact-icon2">
                 <a href="#">
-                <img src="images/placeholder.png" alt="location">
+                  <img src="images/placeholder.png" alt="location">
                   P No. 2A Padma Nagar 5th Street, Puthagaram, Kolathur, Chennai-600099.
                 </a>
               </div>
@@ -127,23 +317,23 @@
                   </a>
                 </div>
               </div>
-            </div> 
+            </div>
           </div>
           <div class="contact-items">
             <!-- <h2>Contact Us</h2> -->
-              <p>Drop in your details. Will get back to you</p>
-              <div class="contact-container1">        
-                <div class="contact-form">        
-                  <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="text" placeholder="Last Name"><br>
-                    <input type="Email" placeholder="Email" required><br>
-                    <input type="text" placeholder="Subject of this message"><br>
-                    <textarea name="message" placeholder="Message" rows="8" required></textarea><br>
-                    <button class="submit" >Send Message</button> 
-                  </form>   
-                </div>
+            <p>Drop in your details. Will get back to you</p>
+            <div class="contact-container1">
+              <div class="contact-form">
+                <form>
+                  <input type="text" placeholder="Your Name" required>
+                  <input type="text" placeholder="Last Name"><br>
+                  <input type="Email" placeholder="Email" required><br>
+                  <input type="text" placeholder="Subject of this message"><br>
+                  <textarea name="message" placeholder="Message" rows="8" required></textarea><br>
+                  <button class="submit">Send Message</button>
+                </form>
               </div>
+            </div>
           </div>
         </div>
       </div>
@@ -153,6 +343,8 @@
     </div>
   </footer>
 
+
+  <script src="script.js" defer></script>
 </body>
 
 </html>
